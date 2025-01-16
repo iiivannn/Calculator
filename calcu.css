@@ -12,10 +12,20 @@
   height: 100vh;
 }
 
+.smaller-wrapper {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: grey;
+}
+
 .screen {
   width: 30vw;
   height: 70px;
-  text-align: end;
+  background-color: lightgray;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .buttons {

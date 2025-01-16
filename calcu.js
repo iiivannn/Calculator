@@ -32,8 +32,13 @@ function getResult() {
     screenDisplay(result);
     expression = result.toString();
   } catch (error) {
-    screenDisplay("Error");
-    expression = "";
+    if (expression === null || expression === "") {
+      screenDisplay("0");
+      expression = "";
+    } else {
+      screenDisplay("Error");
+      expression = "";
+    }
   }
 }
 
